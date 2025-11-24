@@ -10,7 +10,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetMouseButtonDown(0))
         {
             FireRaycast();
             SpawnSphere();

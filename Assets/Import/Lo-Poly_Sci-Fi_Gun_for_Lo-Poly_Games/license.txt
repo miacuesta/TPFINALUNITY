@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lo-Poly Sci-Fi Gun for Lo-Poly Games
+* source:	https://sketchfab.com/3d-models/lo-poly-sci-fi-gun-for-lo-poly-games-5251427a794e4ec48e5ea8bd0471e1fe
+* author:	ThatRandomThinkr (https://sketchfab.com/YeetMister66)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lo-Poly Sci-Fi Gun for Lo-Poly Games" (https://sketchfab.com/3d-models/lo-poly-sci-fi-gun-for-lo-poly-games-5251427a794e4ec48e5ea8bd0471e1fe) by ThatRandomThinkr (https://sketchfab.com/YeetMister66) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

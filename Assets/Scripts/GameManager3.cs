@@ -1,0 +1,18 @@
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameManager3 : MonoBehaviour
+{
+    private void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+}
