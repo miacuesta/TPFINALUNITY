@@ -8,15 +8,24 @@ public class TargetActivator : MonoBehaviour
     [Header("RENDERER DE LA DIANA (SE ILUMINA)")]
     public Renderer dianaRenderer;
 
+    [Header("MATERIALES")]
+    public Material DianaOff;
+    public Material DianaOn;
+
+    private bool activated = false;
+
     public void Activate()
     {
-        // Activar emisiones en la DIANA
-        if (dianaRenderer != null)
+        if (activated) return; // evita que se reactive mil veces
+        activated = true;
+
+        // Cambiar el material a DianaOn (emisivo)
+        if (dianaRenderer != null && DianaOn != null)
         {
-            dianaRenderer.material.EnableKeyword("_EMISSION");
+            dianaRenderer.material = DianaOn;
         }
 
-        // Encender la luz encima de la plataforma
+        // Encender luz de la plataforma
         if (revealLight != null)
         {
             revealLight.enabled = true;
