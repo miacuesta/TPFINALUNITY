@@ -12,25 +12,31 @@ public class TargetActivator : MonoBehaviour
     public Material DianaOff;
     public Material DianaOn;
 
+    [Header("PLATAFORMAS A ACTIVAR")]
+    public GameObject[] plataformas; // ← plataformas que se activan
+
     private bool activated = false;
 
     public void Activate()
     {
-        if (activated) return; // evita que se reactive mil veces
+        if (activated) return; // evita reactivaciones
         activated = true;
 
-        // Cambiar el material a DianaOn (emisivo)
+        // Cambiar material de la diana
         if (dianaRenderer != null && DianaOn != null)
-        {
             dianaRenderer.material = DianaOn;
-        }
 
-        // Encender luz de la plataforma
+        // Encender luz
         if (revealLight != null)
-        {
             revealLight.enabled = true;
+
+        // Activar cada plataforma
+        foreach (GameObject p in plataformas)
+        {
+            if (p != null)
+                p.SetActive(true);
         }
 
-        Debug.Log("DIANA ACTIVADA");
+        Debug.Log("DIANA ACTIVADA + PLATAFORMAS ACTIVADAS");
     }
 }
